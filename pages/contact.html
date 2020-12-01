@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Julian Berrios, IS117-001, Fall 2020 -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Julian Berrios's Website</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse" style="color: aliceblue;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">Julian A. Berrios</a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="myResume.html">My Resume</a></li>
+                        <li class="active"><a href="contact.html">Contact Me</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Me<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="hobbies.html">Hobbies</a></li>
+                                <li><a href="skills.html">Skills</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <h1 style="text-align: left;">Get in touch with me!</h1>
+            <form style="margin-left: auto; margin-right: auto; margin-top: 100px; padding-left: 30px;">
+                <label for="fullName">Your Name:</label><br>
+                <input type="text" id="fullName"><br><br>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email"><br><br>
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" style="height: auto; width: auto;"></textarea><br><br>
+                <input type="submit" onclick="alert('Submitted!')">
+            </form>
+
+    </div>
+
+
+</body>
+<footer class="container-fluid text-center navbar-fixed-bottom" style="background-color:black;">
+    <p style="color: aliceblue; padding: 5px;"> &copy; Julian Berrios, December 2020</p>
+</footer>
