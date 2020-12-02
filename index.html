@@ -43,7 +43,46 @@
             </div>
         </nav>
     </header>
-        <main>
+
+    <style>
+        * {
+          box-sizing:border-box;
+        }
+        
+        .left {
+          
+          
+          float:left;
+          width:20%; /* The width is 20%, by default */
+        }
+        
+        .main {
+            background-color: aliceblue;
+          
+          float:left;
+          width:60%; /* The width is 60%, by default */
+        }
+        
+        .right {
+          
+          
+          float:left;
+          width:20%; /* The width is 20%, by default */
+        }
+        
+        /* Use a media query to add a break point at 800px: */
+        @media screen and (max-width:800px) {
+          .left, .main, .right {
+            width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+          }
+        }
+    </style>
+
+        <div class="left" style="color: aliceblue;">
+            <p>Placeholder</p>
+        </div>
+
+        <main class="main">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6" style="min-height: 350px; max-height: 350px;">
@@ -61,9 +100,8 @@
                 <h4 class="text-center" style="padding-top: 40px; font-size: xx-large;"><strong>Lorem Ipsum</strong>
                 </h4>
                 <p class="text-center"
-                    style="padding-top: 10px; font-size: large; margin-left: 100px; margin-right: 100px;">Lorem ipsum
-                    dolor sit amet,
-                    consectetur adipiscing elit,
+                    style="padding-top: 10px; font-size: large; margin-left: 10%; margin-right: 10%;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper.
                     Ipsum consequat nisl vel pretium lectus. Pellentesque dignissim enim sit amet.
@@ -75,10 +113,12 @@
 
             </div>
 
-
-
-
         </main>
+
+        <div class="right" style="color: aliceblue;">
+            <p>Placeholder</p>>
+            
+        </div>
 
 
 
@@ -86,7 +126,7 @@
 
 </body>
 <footer class="container-fluid text-center navbar-fixed-bottom" style="background-color:black;">
-    <p style="color: aliceblue; padding: 5px;"> &copy; Julian Berrios, December 2020</p>
+    <p style="color: aliceblue; padding: 5px;"> &copy; Julian Berrios, December 2020 | Terms of Service | Privacy Policy</p>
 </footer>
 
 </html>

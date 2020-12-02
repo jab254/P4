@@ -44,9 +44,48 @@
         </nav>
     </header>
 
-    <div>
-        <h1 style="padding-top: 25px; padding-left: 25px;">My Skills!</h1>
-        <blockquote style="font-size: larger; width: 600px; padding-left: 50px; padding-top: 10px; margin: auto;">
+    <style>
+        * {
+          box-sizing:border-box;
+        }
+        
+        .left {
+          
+          
+          float:left;
+          width:20%; /* The width is 20%, by default */
+        }
+        
+        .main {
+            background-color: aliceblue;
+          padding:20px;
+          float:left;
+          width:60%; /* The width is 60%, by default */
+        }
+        
+        .right {
+          
+          
+          float:left;
+          width:20%; /* The width is 20%, by default */
+        }
+        
+        /* Use a media query to add a break point at 800px: */
+        @media screen and (max-width:800px) {
+          .left, .main, .right {
+            width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+          }
+        }
+    </style>
+    
+    <div class="left" style="color: aliceblue;">
+        <p>Placeholder</p>>
+        
+    </div>
+
+    <div class="main">
+        <h1 style="padding-top: 2%; padding-left: 25px;">My Skills!</h1>
+        <blockquote style="font-size: larger; width: 50%; padding-top: 10px; margin: auto;">
             "I don't know who you are. I don't know what you want. If you are looking for ransom I 
             can tell you I don't have money, but what I do have are a very particular set of skills. 
             Skills I have acquired over a very long career. Skills that make me a nightmare for people 
@@ -54,11 +93,16 @@
             I will not pursue you, but if you don't, I will look for you, I will find you and I will kill 
             you."
         </blockquote>
-        <p style="font-size: large; padding-left: 70px;">—Liam Neeson, Taken</p>
+        <p style="font-size: large; margin-right: 10%; float: right;">—Liam Neeson, Taken</p>
 
+    </div>
+
+    <div class="right" style="color: aliceblue;">
+        <p>Placeholder</p>>
+        
     </div>
 
 </body>
 <footer class="container-fluid text-center navbar-fixed-bottom" style="background-color:black;">
-    <p style="color: aliceblue; padding: 5px;"> &copy; Julian Berrios, December 2020</p>
+    <p style="color: aliceblue; padding: 5px;"> &copy; Julian Berrios, December 2020 | Terms of Service | Privacy Policy</p>
 </footer>

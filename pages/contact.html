@@ -44,7 +44,45 @@
         </nav>
     </header>
 
-    <div>
+    <style>
+        * {
+          box-sizing:border-box;
+        }
+        
+        .left {
+          
+          padding:20px;
+          float:left;
+          width:20%; /* The width is 20%, by default */
+        }
+        
+        .main {
+          padding:20px;
+          float:left;
+          width:60%; /* The width is 60%, by default */
+        }
+        
+        .right {
+          
+          padding:20px;
+          float:left;
+          width:20%; /* The width is 20%, by default */
+        }
+        
+        /* Use a media query to add a break point at 800px: */
+        @media screen and (max-width:800px) {
+          .left, .main, .right {
+            width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+          }
+        }
+        </style>
+    
+    <div class="left" style="color: aliceblue;">
+        <p>Placeholder</p>>
+        
+    </div>
+    
+    <div class="main">
         <h1 style="text-align: left;">Get in touch with me!</h1>
             <form style="margin-left: auto; margin-right: auto; margin-top: 100px; padding-left: 30px;">
                 <label for="fullName">Your Name:</label><br>
@@ -55,11 +93,14 @@
                 <textarea id="comments" style="height: auto; width: auto;"></textarea><br><br>
                 <input type="submit" onclick="alert('Submitted!')">
             </form>
-
     </div>
 
+    <div class="right" style="color: aliceblue;">
+        <p>Placeholder</p>>
+        
+    </div>
 
 </body>
 <footer class="container-fluid text-center navbar-fixed-bottom" style="background-color:black;">
-    <p style="color: aliceblue; padding: 5px;"> &copy; Julian Berrios, December 2020</p>
+    <p style="color: aliceblue; padding: 5px;"> &copy; Julian Berrios, December 2020 | Terms of Service | Privacy Policy</p>
 </footer>
