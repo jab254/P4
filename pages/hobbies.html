@@ -50,7 +50,7 @@
         }
 
         .left {
-            
+            height: auto;
             padding:20px;
             float: left;
             width: 20%;
@@ -65,7 +65,7 @@
         }
 
         .right {
-            
+            height: 100%;
             padding:20px;
             float: left;
             width: 20%;
@@ -83,8 +83,11 @@
             }
         }
         
-        
+        .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+            display:block;
+        }
     </style>
+
 
     <div class="left" style="color: aliceblue;">
         <p>Placeholder</p>
@@ -95,19 +98,25 @@
         <h1 style="padding-top: 25px; padding-left: 25px;">My Hobbies!</h1>
             <p style="text-align:center; font-size: large; width: 100%; padding-top: 10px;">
                 I like to do a lot of things in my
-                spare time. One of my favorite things is to play hockey,
+                spare time. One of my favorite things to do is play hockey,
                 whether it be ice hockey or roller hockey. My favorite team to watch
-                is the New Jersey Devils. I've been following them since I was 10 years old.
+                is the New Jersey Devils. I've been following them since I was 10 years old 
+                and I've been to many games. Besides playing and watching hockey, I like to play 
+                video games and hang out with my friends.
             </p>
             
 
             <!--
             Can't seem to figure out how to center the carousel in the middle of the main div
+            Also when the screen is made very narrow, like a cell phone screen, the chevrons
+            overlap and you can only go in the forward direction. If you could tell me what's
+            wrong I'd greatly appreciate it.
+            
             credit the code below to w3schools
             -->
         <div class="container">
             <div class="row">
-                <div class="col-sm-8" style="margin: auto">
+                <div class="col-sm-8" style="margin: auto; width: 100%;">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -147,7 +156,7 @@
     </div>
 
     <div class="right" style="color: aliceblue;">
-        <p>Placeholder</p>>
+        <p>Placeholder</p>
         
     </div>
 
